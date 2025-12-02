@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 # configuration for downloading and organizing the data
 BLOB_SERVICE_URL = "https://aimistanforddatasets01.blob.core.windows.net"
-SAS_TOKEN = "sv=2019-02-02&sr=c&sig=cHmOYunc9zM9x0smGW6i20fYjH8yo%2FK2aCc%2FrNnvv38%3D&st=2025-08-20T19%3A16%3A32Z&se=2025-09-19T19%3A21%3A32Z&sp=rl"
+SAS_TOKEN = "YOUR_SAS_TOKEN"
 CONTAINER_NAME = "echonetdynamic-2"
 ZIP_BLOB_NAME = "EchoNet-Dynamic.zip"
 
@@ -138,4 +138,5 @@ if __name__ == "__main__":
     sort_videos(EXTRACT_DIR, SORTED_DIR)
     split_data(SORTED_DIR, SPLIT_DIR)
     
+
     print("\nData preparation is complete. The data is ready for training in the './data/split' directory.")
