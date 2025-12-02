@@ -1,12 +1,12 @@
 # **Deep Learning for Echocardiogram Video Classification**
 
-## **📌 Project Overview**
+## ** Project Overview**
 
 This project implements a **State-of-the-Art (SoTA) Hybrid Video Transformer** to classify echocardiogram videos as **Normal** or **Abnormal** based on Ejection Fraction (EF).
 
 Moving beyond standard global transformers, this project introduces a **Hybrid Local-Global Architecture** that combines **Multi-Head Self Attention (MHSA)** with **Depth-Wise Convolutions (DWConv)**. This dual-path design captures both the global cardiac rhythm and fine-grained, transient wall motion anomalies, significantly improving clinical sensitivity.
 
-### **🚀 Key Features**
+### ** Key Features**
 
 * **Hybrid Architecture:** Custom HybridEncoderLayer combining Swin Transformer (Spatial) with parallel Attention/Convolution paths (Temporal).  
 * **HPC-Native Engineering:** Robust **Checkpoint & Resume** system designed for High-Performance Computing clusters with strict runtime limits (e.g., 12-hour windows).  
@@ -20,7 +20,7 @@ Moving beyond standard global transformers, this project introduces a **Hybrid L
 * **Data Processing:** OpenCV, NumPy, Pandas, Pillow  
 * **Evaluation:** Scikit-Learn (Classification Report, Confusion Matrix)
 
-## **📂 Project Structure**
+## ** Project Structure**
 
 .  
 ├── data/                   \# Dataset directory (created by pre\_data.py)  
@@ -56,7 +56,7 @@ To run the rigorous 7-Fold validation. This script includes **Auto-Resume logic*
 
 python train\_kfold.py \--output\_path ./output\_kfold
 
-## **🧠 Model Architecture details**
+## ** Model Architecture details**
 
 ### **The "Recall Bottleneck" Problem**
 
@@ -72,7 +72,7 @@ We replaced the standard Temporal Encoder with a custom **Hybrid Encoder** inspi
 
 **Result:** Abnormal Recall improved from **26%** $\\rightarrow$ **63%**.
 
-## **📊 Results Summary**
+## ** Results Summary**
 
 | Model Phase | Approach | Accuracy | Abnormal Recall |
 | :---- | :---- | :---- | :---- |
