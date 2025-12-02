@@ -1,0 +1,12 @@
+torch
+torchvision
+timm
+pandas
+opencv-python-headless
+scikit-learn
+seaborn
+matplotlib
+azure-storage-blob
+tqdm
+numpy
+Pillow
