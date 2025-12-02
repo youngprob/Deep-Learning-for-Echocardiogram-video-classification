@@ -82,10 +82,10 @@ We replaced the standard Temporal Encoder with a custom **Hybrid Encoder** inspi
 
 ## **📊 Results Summary**
 
-| Model Phase | Approach | Accuracy | Abnormal Recall |  
-| Phase 1 | CNN \+ LSTM | 79% | 46% |  
-| Phase 2 | Swin \+ Global Transformer | 78% | 26% |  
-| Phase 3 | Swin \+ Hybrid (Ours) | 74% | 63% |  
+| Model Phase | Approach                   | Accuracy  | Abnormal Recall |  
+| Phase 1     | CNN \+ LSTM                | 79%       | 46%             |  
+| Phase 2     | Swin \+ Global Transformer | 78%       | 26%             |  
+| Phase 3     | Swin \+ Hybrid (Ours)      | 74%       | 63%             |  
 *Note: Phase 3 trades a small amount of global accuracy for a massive **2.5x improvement** in sensitivity to disease, making it more clinically valuable.*
 
 ## **📝 Acknowledgments**
