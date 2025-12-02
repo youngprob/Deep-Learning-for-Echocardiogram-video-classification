@@ -1,12 +1,12 @@
 # **Deep Learning for Echocardiogram Video Classification**
 
-## ** Project Overview**
+## Project Overview
 
 This project implements a **State-of-the-Art (SoTA) Hybrid Video Transformer** to classify echocardiogram videos as **Normal** or **Abnormal** based on Ejection Fraction (EF).
 
 Moving beyond standard global transformers, this project introduces a **Hybrid Local-Global Architecture** that combines **Multi-Head Self Attention (MHSA)** with **Depth-Wise Convolutions (DWConv)**. This dual-path design captures both the global cardiac rhythm and fine-grained, transient wall motion anomalies, significantly improving clinical sensitivity.
 
-### ** Key Features**
+### Key Features
 
 * **Hybrid Architecture:** Custom HybridEncoderLayer combining Swin Transformer (Spatial) with parallel Attention/Convolution paths (Temporal).  
 * **HPC-Native Engineering:** Robust **Checkpoint & Resume** system designed for High-Performance Computing clusters with strict runtime limits (e.g., 12-hour windows).  
@@ -20,13 +20,12 @@ Moving beyond standard global transformers, this project introduces a **Hybrid L
 * **Data Processing:** OpenCV, NumPy, Pandas, Pillow  
 * **Evaluation:** Scikit-Learn (Classification Report, Confusion Matrix)
 
-## ** Project Structure**
+##  Project Structure
 
 .  
-├── data/                   \# Dataset directory (created by pre\_data.py)  
-├── dataset.py              \# Custom "Smart" Dataset with Augmentation & K-Fold logic  
-├── model.py                \# The SOTA Hybrid Architecture (Swin \+ DWConv)  
 ├── pre\_data.py             \# Script to download, extract, and sort EchoNet-Dynamic data  
+├── dataset.py              \# Custom "Smart" Dataset with Augmentation & K-Fold logic  
+├── model.py                \# The SOTA Hybrid Architecture (Swin \+ DWConv)    
 ├── train\_fast\_test.py      \# Script for a single Train/Val/Test run (Proof of Concept)  
 ├── train\_kfold.py          \# HPC-Ready script for full 7-Fold Cross Validation  
 ├── requirements.txt        \# Python dependencies  
